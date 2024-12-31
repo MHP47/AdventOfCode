@@ -1,0 +1,38 @@
+site_name: 'Advent of Code'
+site_description:
+    Musings about adventures in Advent of Code
+site_author: MHP47
+site_url: http://aoc.mhp.sh/
+repo_name: 'MHP47/AdventOfCode'
+repo_url: 'https://github.com/MHP47/AdventOfCode'
+
+nav:
+  - Home: index.md
+
+theme:
+  name: material
+  features:
+    - navigation.expand
+    - navigation.top
+    - content.code.copy
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-5
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-3
+        name: Switch to light mode
+
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
+  - meta
